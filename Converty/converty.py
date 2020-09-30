@@ -34,9 +34,9 @@ def ascii(value):
 
 def main():
 
-	my_parser = argparse.ArgumentParser(prog='conny',
+	my_parser = argparse.ArgumentParser(prog='converty',
 		description="Convert to/from hex and ascii encodings",
-		usage="conny [flags] [string to encode/decode]",
+		usage="converty [flags] [string to encode/decode]",
 		allow_abbrev=False)
 
 	my_parser.add_argument('string',
