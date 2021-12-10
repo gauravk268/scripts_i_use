@@ -1,0 +1,4 @@
+https://unix.stackexchange.com/questions/381113/how-do-i-shorten-the-current-directory-path-shown-on-terminal
+
+add this line in the .bashrc file
+PROMPT_DIRTRIM=1

@@ -1,0 +1,18 @@
+If you need to find the motherboard model of your system from the terminal or command line and you do not want to take off the case, there is a program that comes with Ubuntu by default that can do this: dmidecode
+
+If you do not have it, you can install it with this command in most Debian based distributions (Lubuntu, Debian, Mint):
+
+sudo apt-get install dmidecode
+
+To find out your motherboard model, run this command:
+
+sudo dmidecode -s baseboard-product-name
+
+To find more details about your motherboard, run this command:
+
+sudo dmidecode -t baseboard
+
+To find details about all the hardware on your system, run this command:
+
+sudo dmidecode
+

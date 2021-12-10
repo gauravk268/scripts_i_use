@@ -1,0 +1,12 @@
+run
+sudo gedit /etc/gdm3/custom.conf
+
+Next un-comment WaylandEnable=false by removing the # at the beginning
+
+after saving the previous file, run
+
+sudo gedit /etc/environment
+
+When file opens, add line “QT_QPA_PLATFORM=xcb” and save it.
+
+Finally restart your machine and login to check result.

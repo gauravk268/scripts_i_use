@@ -1,0 +1,3 @@
+https://askubuntu.com/questions/251003/how-to-permanently-disable-http-proxy
+
+https://stackoverflow.com/questions/32268986/git-how-to-remove-proxy
