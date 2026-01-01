@@ -71,7 +71,7 @@ Filename holds the problem that has been solved in that file.
 ---
 
 ## 📂 Repository Structure
-
+```
 .
 ├── Bash-Ubuntu
 │   ├── Bluetooth_not_turning_on.sh
@@ -91,3 +91,4 @@ Filename holds the problem that has been solved in that file.
 │   ├── ubuntu_desktop_first_setup.sh
 │   └── ubuntu_server_first_setup.sh
 └── README.md
+```
