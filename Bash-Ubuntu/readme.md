@@ -60,7 +60,9 @@ Filename holds the problem that has been solved in that file.
 - #### touchpad_Gesture.sh
     Ubuntu doesn't have touchpad gestures by default as in Windows like 3 and 4 finger swipe. To get this feature on your device, follow the instructions.
 
-# 🛠️ Ubuntu Development Environment Setup Script
+---
+
+# 🛠️ Ubuntu Desktop Environment Setup Script [ubuntu_desktop_first_setup](https://github.com/gauravk268/scripts_i_use/blob/master/Bash-Ubuntu/ubuntu_desktop_first_setup.sh)
 
 This repository contains a Bash script (`setup-dev-server.sh`) that automates the installation and configuration of a complete development environment on **Ubuntu Server/Desktop**. It is designed for non‑interactive execution, making it ideal for provisioning fresh VMs, workstations, or servers.
 
@@ -117,7 +119,7 @@ The script performs the following tasks:
 
 ---
 
-# 🛠️ Development Server Setup Script
+# 🛠️ Development Server Setup Script [ubuntu_server_first_setup](https://github.com/gauravk268/scripts_i_use/blob/master/Bash-Ubuntu/ubuntu_server_first_setup.sh)
 
 This repository contains a Bash script (`setup-dev-server.sh`) that automates the installation and configuration of a full development environment on **Ubuntu Server**. It is designed for non‑interactive execution, making it ideal for provisioning local VMs or fresh servers.
 
