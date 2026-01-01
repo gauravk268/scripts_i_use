@@ -60,3 +60,50 @@ Filename holds the problem that has been solved in that file.
 
 - #### touchpad_Gesture.sh
     Ubuntu doesn't have touchpad gestures by default as in Windows like 3 and 4 finger swipe. To get this feature on your device, follow the instructions.
+
+# 🛠️ Development Server Setup Script
+
+This repository contains a Bash script (`setup-dev-server.sh`) that automates the installation and configuration of a full development environment on **Ubuntu Server**. It is designed for non‑interactive execution, making it ideal for provisioning local VMs or fresh servers.
+
+---
+
+## 🚀 Features
+
+The script performs the following tasks:
+
+- **System update & essentials**  
+  Updates package lists, upgrades installed packages, and installs core developer tools (`build-essential`, `git`, `curl`, `wget`, `neofetch`, `net-tools`, `tmux`, `neovim`, `htop`, etc.).
+
+- **Git configuration**  
+  Sets global Git username and email, and exports a `GIT_TOKEN` environment variable.
+
+- **Firewall setup (UFW)**  
+  Enables UFW, allows OpenSSH, and ensures secure remote access.
+
+- **Python environment**  
+  Installs **Miniconda** in batch mode and adds it to the PATH for isolated Python environments.
+
+- **Node.js environment**  
+  Installs **NVM (Node Version Manager)** and Node.js v22, with persistent configuration in `~/.bashrc`.
+
+- **Java environment**  
+  Installs **OpenJDK 21** and the default JRE.
+
+- **Docker & container tools**  
+  Adds Docker’s official repository, installs Docker Engine, CLI, Containerd, and Docker Compose plugin. Configures the current user for non‑root Docker usage.
+
+- **GitHub CLI**  
+  Installs `gh` for managing repositories, pull requests, and workflows.
+
+- **Databases**  
+  Installs **PostgreSQL** (with contrib extensions) and **Redis** for local development.
+
+- **Developer aliases**  
+  Appends a curated set of productivity aliases to `~/.bashrc`, grouped by category:
+  - Git shortcuts (`ga`, `gc`, `gco`, `gpl`, etc.)
+  - Navigation (`.`, `..`, `...`)
+  - System utilities (`c`, `h`, `rl`, etc.)
+  - Listing helpers (`ll`, `lf`, `lu`, etc.)
+  - Archiving (`untar`, `tar`, `mkdir`)
+
+---
