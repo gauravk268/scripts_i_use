@@ -45,7 +45,6 @@ Filename holds the problem that has been solved in that file.
 - #### remove_Proxy.sh
     If you want to remove all proxy settings from the system, run this script.
 
-
 - #### run_On_Fresh_Install.sh
     This script contains all the basic settings and packages that one needs for day-to-day work, and it needs time to do it one by one. So the script installs all the packages after it has been executed.
 
@@ -60,6 +59,63 @@ Filename holds the problem that has been solved in that file.
 
 - #### touchpad_Gesture.sh
     Ubuntu doesn't have touchpad gestures by default as in Windows like 3 and 4 finger swipe. To get this feature on your device, follow the instructions.
+
+# 🛠️ Ubuntu Development Environment Setup Script
+
+This repository contains a Bash script (`setup-dev-server.sh`) that automates the installation and configuration of a complete development environment on **Ubuntu Server/Desktop**. It is designed for non‑interactive execution, making it ideal for provisioning fresh VMs, workstations, or servers.
+
+---
+
+## 🚀 Features
+
+The script performs the following tasks:
+
+- **System update & essentials**  
+  Updates package lists, upgrades installed packages, and installs core developer tools (`build-essential`, `git`, `curl`, `wget`, `neofetch`, `net-tools`, `tmux`, `neovim`, `htop`, etc.).
+
+- **Shell & productivity**  
+  Installs **Oh My Bash** and optionally **Zsh + Oh My Zsh** with the **Powerlevel10k theme** and plugins (autosuggestions, syntax highlighting, bat integration).
+
+- **Fonts & UI**  
+  Installs **Nerd Fonts** for better terminal/UI rendering.  
+  Configures **Fcitx UI** and installs **AppImageLauncher** for AppImage integration.
+
+- **Firewall & networking**  
+  Enables **UFW firewall**, allows SSH, and configures KDE Connect ports.
+
+- **Python environment**  
+  Installs **Miniconda** in batch mode and adds it to the PATH for isolated Python environments.
+
+- **Node.js environment**  
+  Installs **NVM (Node Version Manager)** and Node.js v22, with persistent configuration in `~/.bashrc`.
+
+- **Java environment**  
+  Installs **OpenJDK 21** and the default JRE.
+
+- **Docker & container tools**  
+  Adds Docker’s official repository, installs Docker Engine, CLI, Containerd, and Docker Compose plugin. Configures the current user for non‑root Docker usage.
+
+- **Desktop apps & extras**  
+  Installs **Microsoft Edge**, **VirtualBox**, **VLC**, **GIMP**, **Audacity**, **Transmission**, and other multimedia tools.
+
+- **Flatpak apps**  
+  Configures Flathub and installs apps like **Postman**, **Image Optimizer**, and **Gcolor3**.
+
+- **GNOME settings (conditional)**  
+  If running GNOME, configures desktop settings (battery percentage, clock format, dash‑to‑dock tweaks).
+
+- **Developer aliases**  
+  Appends a curated set of productivity aliases to `~/.bashrc`, grouped by category:
+  - Git shortcuts (`ga`, `gc`, `gco`, `gpl`, etc.)
+  - Navigation (`.`, `..`, `...`)
+  - System utilities (`c`, `h`, `rl`, etc.)
+  - Listing helpers (`ll`, `lf`, `lu`, etc.)
+  - Archiving (`untar`, `tar`, `mkdir`)
+
+- **Cleanup**  
+  Runs `autoclean`, `autoremove`, and `clean` to tidy up package caches.
+
+---
 
 # 🛠️ Development Server Setup Script
 
