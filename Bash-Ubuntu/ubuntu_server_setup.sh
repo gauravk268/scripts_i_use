@@ -7,11 +7,10 @@ sudo apt install -y build-essential git curl wget software-properties-common apt
     neofetch net-tools nethogs openssh-server p7zip synaptic ubuntu-restricted-extras unrar unzip vnstat \
     htop ncdu tmux neovim ripgrep fd-find sqlite3 tig   # Install essential dev tools, editors, monitoring, compression, and Git helpers
 
-# --- Install apt-fast for faster downloads ---
-echo "Installing apt-fast..."
-sudo add-apt-repository -y ppa:apt-fast/stable   # Add apt-fast PPA
-sudo apt update   # Refresh package lists
-sudo apt install -y apt-fast   # Install apt-fast for parallelized downloads
+# --- Git Configuration ---
+git config --global user.name "gauravk268"   # Set global Git username
+git config --global user.email "gauravk26800@gmail.com"   # Set global Git email
+echo 'export GIT_TOKEN=git_token_value' >> ~/.bashrc   # Export Git token environment variable
 
 # --- Firewall Setup (UFW) ---
 echo "Setting up Uncomplicated Firewall (UFW)..."
@@ -35,7 +34,7 @@ nvm install 22     # Install Node.js v22
 
 # --- Install Java ---
 echo "Installing Java..."
-sudo apt-fast install -y openjdk-21-jdk default-jre   # Install OpenJDK 21 and default JRE
+sudo apt install -y openjdk-21-jdk default-jre   # Install OpenJDK 21 and default JRE
 
 # --- Install Docker ---
 echo "Installing Docker..."
